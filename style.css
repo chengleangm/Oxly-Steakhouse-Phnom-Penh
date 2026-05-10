@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6efe5;
+  color: #1b1510;
+  font-family: Georgia, serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 8%;
+  background: rgba(18, 12, 8, 0.88);
+  backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.logo {
+  color: #d8a85b;
+  font-size: 26px;
+  letter-spacing: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff3df;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 15px;
+}
+
+.nav-btn,
+.btn {
+  background: #d8a85b;
+  color: #1b1510;
+  padding: 13px 26px;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(216, 168, 91, 0.35);
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #d8a85b;
+  color: #d8a85b;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 28px;
+  border: none;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(10, 7, 5, 0.65), rgba(10, 7, 5, 0.8)),
+    url("https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.small-title {
+  color: #d8a85b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(45px, 7vw, 88px);
+  line-height: 0.95;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 620px;
+  color: #f2dfc8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.section {
+  padding: 110px 8%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
+}
+
+.intro p,
+.luxury-box p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.dark {
+  background: #17100c;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #251914;
+  padding: 38px;
+  border-radius: 30px;
+  border: 1px solid rgba(216, 168, 91, 0.25);
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  border-color: #d8a85b;
+}
+
+.card h3 {
+  color: #d8a85b;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #d9c8b4;
+  line-height: 1.7;
+}
+
+.luxury {
+  background:
+    linear-gradient(rgba(246, 239, 229, 0.88), rgba(246, 239, 229, 0.88)),
+    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.luxury-box {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  padding: 55px;
+  border-radius: 34px;
+  max-width: 700px;
+}
+
+.contact-grid {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.contact-grid div {
+  background: white;
+  padding: 35px;
+  border-radius: 26px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.contact-grid h3 {
+  color: #d8a85b;
+  margin-bottom: 12px;
+}
+
+.page-hero {
+  min-height: 70vh;
+  padding: 140px 8% 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-hero {
+  background:
+    linear-gradient(rgba(10,7,5,0.65), rgba(10,7,5,0.8)),
+    url("https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1600&q=80");
+}
+
+.reservation-hero {
+  background:
+    linear-gradient(rgba(10,7,5,0.65), rgba(10,7,5,0.8)),
+    url("https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1600&q=80");
+}
+
+.menu-section {
+  display: grid;
+  gap: 50px;
+}
+
+.menu-category {
+  background: white;
+  padding: 45px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.menu-item {
+  border-top: 1px solid #eadcc8;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.menu-item h3 {
+  color: #1b1510;
+  margin-bottom: 8px;
+}
+
+.menu-item p {
+  color: #766a5f;
+}
+
+.menu-item span {
+  color: #d8a85b;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reservation-section {
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-form {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  padding: 45px;
+  border-radius: 32px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  display: grid;
+  gap: 18px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  padding: 16px;
+  border: 1px solid #e4d2bc;
+  border-radius: 14px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.reservation-form textarea {
+  height: 120px;
+}
+
+footer {
+  background: #17100c;
+  color: #b9a58f;
+  text-align: center;
+  padding: 30px;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    position: absolute;
+    top: 75px;
+    right: 8%;
+    background: #17100c;
+    padding: 25px;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .intro,
+  .cards,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 80px 6%;
+  }
+
+  .luxury-box,
+  .menu-category,
+  .reservation-form {
+    padding: 30px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+  }
+}

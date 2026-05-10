@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservation | Oxly Steakhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">OXLY</a>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservation.html">Reservation</a>
+  </nav>
+
+  <a href="tel:0966971111" class="nav-btn">Call Now</a>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="page-hero reservation-hero">
+  <div class="fade-up">
+    <p class="small-title">Reservation</p>
+    <h1>Book Your Premium Dining Experience</h1>
+  </div>
+</section>
+
+<section class="section reservation-section">
+  <form class="reservation-form fade-up">
+    <h2>Reserve a Table</h2>
+
+    <input type="text" placeholder="Full Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="date" required />
+    <input type="time" required />
+
+    <select required>
+      <option value="">Number of Guests</option>
+      <option>1 Guest</option>
+      <option>2 Guests</option>
+      <option>3 Guests</option>
+      <option>4 Guests</option>
+      <option>5+ Guests</option>
+    </select>
+
+    <textarea placeholder="Special request"></textarea>
+
+    <button type="submit" class="btn">Submit Reservation</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Oxly Steakhouse — Demo Website Concept</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
